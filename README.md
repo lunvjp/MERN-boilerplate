@@ -1,4 +1,4 @@
-# MERN-boilerplate
+# MERN-boilerplate - Updated
 
 This is a boilerplate project using the following technologies:
 - [React](https://facebook.github.io/react/) and [React Router](https://reacttraining.com/react-router/) for the frontend
@@ -6,28 +6,24 @@ This is a boilerplate project using the following technologies:
 - [Sass](http://sass-lang.com/) for styles (using the SCSS syntax)
 - [Webpack](https://webpack.github.io/) for compilation
 
+# List Tech Stack 
 
-## Requirements
+- [ ] webpack
+- [ ] express module for creating server.
+- [ ] react
+- [ ] node 
+- [ ] Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.  
 
-- [Node.js](https://nodejs.org/en/) 6+
+# List works's task
 
-```shell
-npm install
-```
+- [ ] Sign up
+> http://localhost:8080/api/signup
+
+- [ ] Log in
+- [ ] Forget password
+- [ ] Verify Email
+- [ ] Facebook Login
+- [ ] Google Login
+- [ ] Sign out
 
 
-## Running
-
-Make sure to add a `config.js` file in the `config` folder. See the example there for more details.
-
-Production mode:
-
-```shell
-npm start
-```
-
-Development (Webpack dev server) mode:
-
-```shell
-npm run start:dev
-```
