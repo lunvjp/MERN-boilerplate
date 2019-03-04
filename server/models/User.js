@@ -1,19 +1,20 @@
 const mongoose = require('mongoose'); // Create Data schema
 const bcrypt = require('bcrypt'); // Create password
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema ({
   email : {
     type : String,
-    default : ''
+    default : '',
+    required: true
+  },
+  password : {
+    type : String,
+    default : '',
+    required: true
   },
   name : {
     type : String,
     default : ''
-  },
-  password : {
-    type : String,
-    // TODO: Create function inside this Schema
-    default : 'default password'
   },
   createdAt : {
     type : Date,
@@ -25,13 +26,15 @@ const UserSchema = new mongoose.Schema({
   }
 });
 
-UserSchema.methods.generatePassword = (password) => {
-  bcrypt.hash(password, 10, (err, hash) => {
-    return hash;
+UserSchema.statics.generatePassword = (password) => {
+  return new Promise((resolve, reject) => {
+    bcrypt.hash(password, 10, (err, hash) => {
+      if (err)
+        reject(err)
+
+      resolve(hash)
+    })
   })
-  // return bcrypt.hash(password , 10);
 }
 
 module.exports = mongoose.model('User', UserSchema);
-
-

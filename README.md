@@ -9,13 +9,16 @@ This is a boilerplate project using the following technologies:
 # List Tech Stack 
 
 - [ ] webpack
-- [ ] express
+- [ ] express module for creating server.
 - [ ] react
 - [ ] node 
+- [ ] Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.  
 
 # List works's task
 
 - [ ] Sign up
+> http://localhost:8080/api/signup
+
 - [ ] Log in
 - [ ] Forget password
 - [ ] Verify Email
