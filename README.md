@@ -8,22 +8,36 @@ This is a boilerplate project using the following technologies:
 
 # List Tech Stack 
 
-- [ ] webpack
-- [ ] express module for creating server.
-- [ ] react
-- [ ] node 
-- [ ] Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js.  
+- [x] webpack
+- [x] express module for creating server.
+- [x] react
+- [x] node
+- [x] Mongoose is an Object Data Modeling (ODM) library for MongoDB and Node.js
+- [ ] jsonwebtoken 
 
 # List works's task
 
-- [ ] Sign up
+- [X] Sign up
 > http://localhost:8080/api/signup
 
-- [ ] Log in
-- [ ] Forget password
+- [X] Log in
+- [X] Forget password
 - [ ] Verify Email
 - [ ] Facebook Login
 - [ ] Google Login
 - [ ] Sign out
+
+# Update Stack later
+- [x] async
+https://caolan.github.io/async/docs.html#waterfall
+https://gist.github.com/lunvjp/e370cee127caf86b7a5aa0b4a2f25fd4
+
+- [  ] JWT authentication
+https://www.codementor.io/olatundegaruba/5-steps-to-authenticating-node-js-with-jwt-7ahb5dmyr?icn=post-ag2pmlck0&ici=post-7ahb5dmyr
+
+# List work's later.
+- [ ] Update expired for Token
+
+
 
 
