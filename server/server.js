@@ -59,12 +59,20 @@ if (isDev) {
   });
 }
 
-app.listen(port, '0.0.0.0', (err) => {
+// app.listen(port, '0.0.0.0', (err) => {
+//   if (err) {
+//     console.log(err);
+//   }
+//
+//   console.info('>>> 🌎 Open http://0.0.0.0:%s/ in your browser.', port);
+// });
+
+app.listen(port, (err) => {
   if (err) {
     console.log(err);
   }
 
   console.info('>>> 🌎 Open http://0.0.0.0:%s/ in your browser.', port);
-});
+})
 
 module.exports = app;
